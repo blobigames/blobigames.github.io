@@ -660,14 +660,14 @@
 
 .u-section-2 .u-rotation-parent-1 {
   animation-timing-function: ease;
-  width: 2px;
-  height: 180px;
+  width: 3px;
+  height: 156px;
   margin: -48px 16px 0 auto;
 }
 
 .u-section-2 .u-shape-1 {
-  width: 180px;
-  height: 2px;
+  width: 156px;
+  height: 3px;
   transform-origin: center center;
   transform: translateX(-50%) translateY(-50%) rotate(90deg);
 }
