@@ -2068,6 +2068,7 @@
 .u-section-3 .u-text-7 {
   width: auto;
   font-weight: 700;
+  font-size: 1.125rem;
   margin: 20px auto 0;
 }
 
@@ -2078,6 +2079,7 @@
 .u-section-3 .u-text-8 {
   width: auto;
   font-weight: 700;
+  font-size: 1.125rem;
   margin: 20px auto 0;
 }
 
@@ -2104,14 +2106,6 @@
 
   .u-section-3 .u-group-6 {
     height: auto;
-  }
-
-  .u-section-3 .u-text-7 {
-    font-size: 1.125rem;
-  }
-
-  .u-section-3 .u-text-8 {
-    font-size: 1.125rem;
   }
 }
 
