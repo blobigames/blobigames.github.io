@@ -46984,137 +46984,94 @@ a.u-link.u-text-hover-color-var.hover {
   padding: 5px 18px 6px 17px;
 }
 @media (max-width: 1199px) {
-  .u-header .u-sheet-1 {
-    min-height: 105px;
-  }
-
   .u-header .u-group-1 {
     width: 269px;
-    margin-top: 1px;
-    margin-left: 100px;
     height: auto;
   }
 
   .u-header .u-text-1 {
-    width: auto;
-    margin-top: -81px;
-    margin-right: 636px;
-    margin-left: 100px;
+    margin-top: -79px;
+    margin-right: 724px;
+    margin-left: 0;
   }
 
   .u-header .u-image-1 {
-    margin-top: -58px;
-    margin-left: 274px;
+    margin-top: -57px;
   }
 
   .u-header .u-text-2 {
-    width: auto;
-    margin-top: -54px;
-    margin-right: 554px;
-    margin-left: 139px;
+    margin-top: -51px;
+    margin-right: 789px;
+    margin-left: 24px;
   }
 
   .u-header .u-btn-1 {
-    margin-top: -49px;
-    margin-right: 100px;
-    margin-bottom: 36px;
+    margin-top: -48px;
+    margin-right: 0;
   }
 }
 @media (max-width: 991px) {
-  .u-header .u-sheet-1 {
-    min-height: 97px;
-  }
-
-  .u-header .u-group-1 {
-    margin-left: 210px;
-  }
-
   .u-header .u-text-1 {
-    margin-top: -82px;
-    margin-right: 537px;
-    margin-left: 13px;
+    margin-right: 504px;
   }
 
   .u-header .u-image-1 {
-    margin-top: -60px;
-    margin-left: 183px;
+    margin-left: 200px;
   }
 
   .u-header .u-text-2 {
-    margin-top: -52px;
-    margin-right: 519px;
-    margin-left: 51px;
-  }
-
-  .u-header .u-btn-1 {
-    margin-top: -52px;
-    margin-right: 14px;
-    margin-bottom: 32px;
+    margin-right: 593px;
+    margin-left: 0;
   }
 }
 @media (max-width: 767px) {
-  .u-header .u-group-1 {
-    margin-top: 0;
-    margin-left: 1px;
-  }
-
   .u-header .u-text-1 {
     font-size: 1.6666666666666665rem;
-    margin-top: -85px;
-    margin-right: 300px;
-    margin-left: 21px;
+    margin-right: 324px;
   }
 
   .u-header .u-image-1 {
-    margin-top: -55px;
-    margin-left: 175px;
+    margin-left: 150px;
   }
 
   .u-header .u-text-2 {
     font-size: 1.3333333333333333rem;
-    margin-top: -52px;
-    margin-right: 359px;
-    margin-left: 56px;
-  }
-
-  .u-header .u-btn-1 {
-    margin-top: -47px;
-    margin-right: 12px;
-    margin-bottom: 31px;
+    margin-right: 413px;
   }
 }
 @media (max-width: 575px) {
   .u-header .u-sheet-1 {
-    min-height: 130px;
+    min-height: 150px;
   }
 
   .u-header .u-group-1 {
-    margin-right: initial;
-    margin-left: initial;
-    width: auto;
+    margin-top: 1px;
+    margin-left: auto;
   }
 
   .u-header .u-text-1 {
-    margin-top: -88px;
-    margin-right: 129px;
+    width: auto;
+    margin-top: -80px;
+    margin-right: 76px;
     margin-left: 49px;
   }
 
   .u-header .u-image-1 {
-    margin-top: -60px;
-    margin-left: 196px;
+    margin-top: -58px;
+    margin-left: 197px;
   }
 
   .u-header .u-text-2 {
-    margin-top: -47px;
-    margin-right: 132px;
-    margin-left: 85px;
+    width: auto;
+    margin-top: -48px;
+    margin-right: 149px;
+    margin-left: 65px;
   }
 
   .u-header .u-btn-1 {
-    margin-top: 6px;
+    margin-top: 14px;
     margin-right: auto;
-    margin-bottom: 18px;
+    margin-bottom: 21px;
     padding-right: 9px;
     padding-bottom: 6px;
     padding-left: 9px;
@@ -47126,29 +47083,36 @@ a.u-link.u-text-hover-color-var.hover {
 }
 
 .u-footer .u-sheet-1 {
-  min-height: 78px;
+  min-height: 79px;
+}
+
+.u-footer .u-shape-1 {
+  width: 77px;
+  height: 77px;
+  margin: 1px auto 0 -62px;
 }
 
 .u-footer .u-text-1 {
   font-size: 1rem;
-  font-style: italic;
-  width: 417px;
-  margin: 15px auto 0;
-}
-
-.u-footer .u-text-2 {
-  font-size: 1rem;
-  margin: -41px 804px 0 40px;
+  margin: -52px 804px 0 40px;
 }
 
 .u-footer .u-btn-1 {
   background-image: none;
+  text-decoration: none solid rgb(71, 138, 201);
   padding: 0;
+}
+
+.u-footer .u-text-2 {
+  font-size: 1rem;
+  font-style: italic;
+  width: 417px;
+  margin: -39px auto 0;
 }
 
 .u-footer .u-text-3 {
   font-size: 1rem;
-  margin: -24px 41px 26px 803px;
+  margin: -38px 40px 27px 804px;
 }
 
 .u-footer .u-btn-2 {
@@ -47157,70 +47121,109 @@ a.u-link.u-text-hover-color-var.hover {
   padding: 0;
 }
 @media (max-width: 1199px) {
+  .u-footer .u-sheet-1 {
+    min-height: 73px;
+  }
+
+  .u-footer .u-shape-1 {
+    width: 65px;
+    height: 57px;
+    margin-top: 8px;
+    margin-left: -50px;
+  }
+
   .u-footer .u-text-1 {
-    width: 417px;
+    width: auto;
+    margin-top: -41px;
+    margin-right: 692px;
+    margin-left: 15px;
   }
 
   .u-footer .u-text-2 {
+    width: 417px;
     margin-top: -41px;
-    margin-right: 644px;
-    margin-left: 0;
   }
 
   .u-footer .u-text-3 {
-    margin-top: -24px;
-    margin-right: 0;
-    margin-left: 644px;
+    width: auto;
+    margin: -38px 70px 26px 692px;
   }
 }
 @media (max-width: 991px) {
   .u-footer .u-sheet-1 {
-    min-height: 79px;
+    min-height: 67px;
+  }
+
+  .u-footer .u-shape-1 {
+    width: 75px;
+    height: 37px;
+    margin-top: 15px;
+  }
+
+  .u-footer .u-text-1 {
+    margin-top: -32px;
+    margin-right: 412px;
+    margin-left: 27px;
   }
 
   .u-footer .u-text-2 {
-    width: auto;
-    margin-top: 27px;
-    margin-right: 430px;
-    margin-left: 50px;
+    margin-top: -671px;
   }
 
   .u-footer .u-text-3 {
-    width: auto;
-    margin: -25px 50px 27px 487px;
+    margin: -25px 52px 21px 450px;
   }
 }
 @media (max-width: 767px) {
+  .u-footer .u-shape-1 {
+    height: 37px;
+  }
+
+  .u-footer .u-text-1 {
+    margin-top: -32px;
+    margin-right: 129px;
+    margin-left: 34px;
+  }
+
   .u-footer .u-text-2 {
-    margin-right: 300px;
-    margin-left: 0;
+    margin-top: -671px;
   }
 
   .u-footer .u-text-3 {
-    margin-top: -26px;
-    margin-right: 128px;
-    margin-left: 229px;
+    margin-right: 55px;
+    margin-bottom: 21px;
+    margin-left: 270px;
   }
 }
 @media (max-width: 575px) {
   .u-footer .u-sheet-1 {
-    min-height: 86px;
+    min-height: 69px;
+  }
+
+  .u-footer .u-shape-1 {
+    margin-top: 16px;
+    margin-left: -37px;
   }
 
   .u-footer .u-text-1 {
-    width: 340px;
-  }
-
-  .u-footer .u-text-2 {
     width: 240px;
-    margin-top: 17px;
+    margin-top: -19px;
     margin-left: auto;
     margin-right: auto;
   }
 
+  .u-footer .u-btn-1 {
+    text-decoration: underline !important;
+  }
+
+  .u-footer .u-text-2 {
+    width: 340px;
+    margin-top: 13px;
+  }
+
   .u-footer .u-text-3 {
     width: 172px;
-    margin: 0 auto 18px;
+    margin: -51px auto 35px;
   }
 }
 
