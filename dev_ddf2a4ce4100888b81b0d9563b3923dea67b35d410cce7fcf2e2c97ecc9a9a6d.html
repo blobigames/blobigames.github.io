@@ -9,9 +9,12 @@
 <link rel="stylesheet" href="dev.css" media="screen">
     <script class="u-script" type="text/javascript" src="jquery.js" defer=""></script>
     <script class="u-script" type="text/javascript" src="nicepage.js" defer=""></script>
-    <meta name="generator" content="Nicepage 8.6.22, nicepage.com">
+    <meta name="generator" content="Nicepage 8.8.2, nicepage.com">
     <meta property="og:title" content="dev">
-    <link rel="icon" href="images/favicon.png">
+    <link rel="icon" href="images/Untitled_design__32_-removebg-preview.png">
+    
+    
+    
     
     
     
@@ -19,8 +22,8 @@
     <script type="application/ld+json">{
 		"@context": "http://schema.org",
 		"@type": "Organization",
-		"name": "Blobigames 2",
-		"logo": "images/Untitled_design__32_-removebg-preview.png"
+		"name": "Blobigames 2 3",
+		"logo": "images/Untitled_design__32_-removebg-preview.png?rand=0c6e"
 }</script>
     <meta name="theme-color" content="#478ac9">
     <meta property="og:description" content="">
@@ -38,32 +41,747 @@
     display: none !important;
   }
 }
-</style><meta data-intl-tel-input-cdn-path="intlTelInput/"></head>
-  <body data-path-to-root="./" data-include-products="true" class="u-body u-clearfix u-xl-mode" data-lang="de"><header class="u-clearfix u-color-var u-header u-valign-middle-xs u-header" id="header"><div class="u-clearfix u-sheet u-valign-middle-sm u-sheet-1">
+</style>
+<script>
+if (window.self === window.top) {
+    document.addEventListener("DOMContentLoaded", function () {
+        const popupId = "popup-569d";
+        const interval = 60000;
+
+        setInterval(function () {
+            const popup = document.getElementById(popupId);
+            if (popup) {
+                const button = document.querySelector('a[href="#' + popupId + '"]');
+                if (button) button.click();
+            }
+        }, interval);
+    });
+}
+</script>
+<script>
+if (window.self !== window.top) {
+    const style = document.createElement('style');
+    style.textContent = `
+        .u-header,
+        .u-footer {
+            display: none !important;
+        }
+    `;
+    document.head.appendChild(style);
+}
+</script>
+<script src="https://f.convertkit.com/ckjs/ck.5.js"></script>
+
+
+
+
+
+<style>
+  /* BLOBIGAMES SUCHE - places itself in the header, reads all games + pictures from the page */
+  :root {
+    --bs-bg: #ffffff;        /* field + dropdown background */
+    --bs-text: #1d1d1f;      /* text colour                 */
+    --bs-muted: #6b6b76;     /* descriptions, icon          */
+    --bs-accent: #e8508f;    /* focus ring + highlight      */
+    --bs-border: #d9d9e0;
+    --bs-hover: #f3eff6;     /* selected result row         */
+    --bs-height: 42px;       /* height of the search field  */
+  }
+  .bs-slot { z-index: 20; box-sizing: border-box; }
+  .bs-slot.bs-center { position: absolute; left: 50%; top: 50%; margin: 0; transform: translate(-50%, -50%); }
+  .bs-slot.bs-row { position: relative; clear: both; width: min(520px, calc(100% - 24px)); margin: 4px auto 12px; }
+  .bs-wrap { position: relative; width: 100%; font-family: inherit; }
+  .bs-wrap .bs-icon { position: absolute; left: 14px; top: 50%; width: 18px; height: 18px;
+    transform: translateY(-50%); color: var(--bs-muted); pointer-events: none; }
+  .bs-wrap input.bs-input { box-sizing: border-box; width: 100%; height: var(--bs-height); margin: 0;
+    padding: 0 14px 0 42px; border: 2px solid var(--bs-border); border-radius: 999px;
+    background: var(--bs-bg); color: var(--bs-text); font: inherit; font-size: 16px;
+    outline: none; -webkit-appearance: none; appearance: none; transition: border-color .15s, box-shadow .15s; }
+  .bs-wrap input.bs-input::placeholder { color: var(--bs-muted); opacity: 1; }
+  .bs-wrap input.bs-input:focus { border-color: var(--bs-accent); box-shadow: 0 0 0 4px rgba(232, 80, 143, .2); }
+  .bs-results { position: fixed; z-index: 2147483000; display: none; box-sizing: border-box; padding: 6px;
+    overflow-y: auto; background: var(--bs-bg); border: 1px solid var(--bs-border); border-radius: 14px;
+    box-shadow: 0 14px 36px rgba(0, 0, 0, .2); font-family: inherit; text-align: left; }
+  .bs-results.bs-open { display: block; }
+  .bs-results a.bs-item { display: flex; align-items: center; gap: 12px; padding: 8px 10px; border-radius: 10px;
+    color: var(--bs-text) !important; text-decoration: none !important; cursor: pointer; }
+  .bs-results a.bs-item.bs-active { background: var(--bs-hover); }
+  .bs-results .bs-thumb { flex: none; width: 52px; height: 52px; border-radius: 10px; object-fit: cover;
+    background: var(--bs-hover); }
+  .bs-results .bs-letter { display: flex; align-items: center; justify-content: center;
+    color: #fff; font-weight: 800; font-size: 22px; }
+  .bs-results .bs-txt { flex: 1; min-width: 0; }
+  .bs-results .bs-title { font-weight: 700; font-size: 15px; line-height: 1.25; }
+  .bs-results .bs-title mark { background: none; color: var(--bs-accent); }
+  .bs-results .bs-sub { font-size: 12.5px; line-height: 1.35; color: var(--bs-muted);
+    white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .bs-results .bs-empty { padding: 12px; font-size: 14px; color: var(--bs-muted); }
+  .bs-fab { position: fixed; right: 18px; bottom: 18px; z-index: 2147482000; width: 54px; height: 54px;
+    border: 0; border-radius: 50%; background: var(--bs-accent); color: #fff; cursor: pointer;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, .25); display: flex; align-items: center; justify-content: center; }
+  .bs-fab svg { width: 24px; height: 24px; }
+  .bs-float { position: fixed; top: 14px; left: 50%; z-index: 2147482500; display: none;
+    width: min(560px, calc(100vw - 24px)); transform: translateX(-50%); }
+  .bs-float.bs-open { display: block; }
+  .bs-float input.bs-input { box-shadow: 0 10px 30px rgba(0, 0, 0, .25); }
+</style>
+<script>
+(function () {
+  'use strict';
+
+  /* ================= settings ================= */
+  var CONFIG = {
+    placeholder: 'Spiel suchen \u2026',
+    emptyText: 'Kein Spiel gefunden \ud83d\ude15',
+    loadingText: 'Spiele werden geladen \u2026',
+    maxResults: 8,
+    placement: 'header',   // 'header' = centred in the header automatically (no HTML element needed)
+                           // 'snippet' = inside your HTML elements with class blobi-search
+    barMaxWidth: 460,      // widest the bar gets in the header
+    barMinWidth: 220,      // less room than this (phones) -> bar gets its own row under the header
+    onlyGamesOnThisDevice: true,  // true = phones only find games that are in your phone layout
+    gamesPage: './',       // the page with all the games; other pages (Team, Kontakt \u2026) search it
+    linkPattern: /blobigames\.short\.gy\/|blob-chat\.html/i,  // which links count as games/apps
+    ignorePattern: /referral-blobigames/i,                     // ad links to skip
+    // Extra search words, keyed by the end of the game's link (\u2026short.gy/KEY)
+    keywords: {
+      'c': 'schach',
+      'ec': 'minecraft',
+      'dm': 'auto fahren',
+      'fnab': 'fnaf horror',
+      'blob-chat.html': 'chat',
+      'blob-gpt': 'ki ai chatbot'
+    }
+  };
+
+  /* ================= internals ================= */
+  var SEARCH_SVG = '\u003csvg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" ' +
+    'stroke-linecap="round" aria-hidden="true">\u003ccircle cx="11" cy="11" r="7"/>' +
+    '\u003cpath d="M20 20l-3.5-3.5"/>\u003c/svg>';
+  var LETTER_COLORS = ['#e8508f', '#7c5cff', '#2a9d8f', '#f4a261', '#3a86ff', '#ef476f', '#06a77d'];
+  var GENERIC = /^(spielen|jetzt spielen|spiel starten|play|play now|offnen|starten|start|los|mehr|hier|hot|neu|new|favorit|bald verfugbar)$/;
+  var SWITCHER = '.u-tab-pane, [role="tabpanel"], .u-carousel-item, .u-slide';
+  var STATE_CLASS = /^(u-active|u-tab-active|u-carousel-item|u-carousel-item-(next|prev|left|right)|u-tab-pane|u-slide|active|show|fade)$/;
+  var BREAKPOINTS = [['xl', 1200], ['lg', 992], ['md', 768], ['sm', 576], ['xs', 0]];
+  var ICON_STORE = 'blobiSearchIcons';
+  var index = [], ready = false, livePage = true, uid = 0, widgets = [];
+  var iconMap = loadIcons();
+
+  function slice(list) { return Array.prototype.slice.call(list); }
+  function clean(s) {
+    return (s || '').replace(/[\u200b-\u200d\ufeff]/g, '').replace(/\s+/g, ' ').trim();
+  }
+  function norm(s) {
+    return clean(s).normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase()
+      .replace(/\u00df/g, 'ss').replace(/sch/g, 'sh')            // "Blobfish" finds "Blobfisch"
+      .replace(/[^a-z0-9]+/g, ' ').trim();
+  }
+  function absUrl(a) {
+    try { return new URL(a.getAttribute('href'), location.href).href; } catch (e) { return a.href || ''; }
+  }
+  function linkKey(href) {
+    return href.replace(/[?#].*$/, '').replace(/\/+$/, '').toLowerCase();
+  }
+  function slugOf(href) {
+    var parts = linkKey(href).split('/');
+    return parts[parts.length - 1];
+  }
+  function currentBp() {
+    for (var i = 0; i !== BREAKPOINTS.length; i++) if (window.innerWidth >= BREAKPOINTS[i][1]) return BREAKPOINTS[i][0];
+    return 'xs';
+  }
+  function loadIcons() {
+    try { return JSON.parse(localStorage.getItem(ICON_STORE)) || {}; } catch (e) { return {}; }
+  }
+  function saveIcons() {
+    try { localStorage.setItem(ICON_STORE, JSON.stringify(iconMap)); } catch (e) {}
+  }
+  function debounce(fn) {
+    var t; return function () { clearTimeout(t); t = setTimeout(fn, 120); };
+  }
+
+  /* ================= reading the games ================= */
+  function isGameLink(a) {
+    var h = a.getAttribute('href');
+    if (!h || h.charAt(0) === '#') return false;
+    if (a.closest('.bs-results, .bs-wrap')) return false;
+    var url = absUrl(a);
+    return CONFIG.linkPattern.test(url) && !CONFIG.ignorePattern.test(url);
+  }
+  function distinctLinks(el) {
+    var seen = {}, n = 0;
+    slice(el.querySelectorAll('a[href]')).forEach(function (a) {
+      var h = (a.getAttribute('href') || '').trim();
+      if (!h || h.charAt(0) === '#' || /^(javascript|mailto|tel):/i.test(h)) return;
+      var k = linkKey(absUrl(a));
+      if (!seen[k]) { seen[k] = 1; n++; }
+    });
+    return n;
+  }
+  // Widest box around the link that holds no *other* link = the game card.
+  function findCard(a) {
+    var el = a, body = a.ownerDocument.body;
+    while (el.parentElement && el.parentElement !== body) {
+      var p = el.parentElement;
+      if (/^(SECTION|HEADER|FOOTER|MAIN)$/.test(p.tagName) || p.classList.contains('u-sheet')) break;
+      if (distinctLinks(p) > 1) break;
+      el = p;
+    }
+    return el;
+  }
+  function findTitle(card, a) {
+    var hs = card.querySelectorAll('h1, h2, h3, h4, h5, h6');
+    for (var i = 0; i !== hs.length; i++) {
+      var t = clean(hs[i].textContent);
+      if (t && t.length <= 70 && !GENERIC.test(norm(t))) return t;
+    }
+    var img = card.querySelector('img[alt]');
+    if (img && clean(img.alt).length > 2 && !/^(bild|image|img)$/i.test(clean(img.alt))) return clean(img.alt);
+    var lt = clean(a.textContent);
+    if (lt && lt.length <= 70 && !GENERIC.test(norm(lt))) return lt;
+    return null;
+  }
+  function findDesc(card, title) {
+    var ps = card.querySelectorAll('p, .u-text');
+    for (var i = 0; i !== ps.length; i++) {
+      var t = clean(ps[i].textContent);
+      if (t.length > 15 && t !== title && !ps[i].closest('a.u-btn, button')) return t.slice(0, 220);
+    }
+    return '';
+  }
+  function findCategory(a) {
+    var pane = a.closest('.u-tab-pane, [role="tabpanel"]');
+    if (!pane || !pane.id) return '';
+    var id = window.CSS && CSS.escape ? CSS.escape(pane.id) : pane.id;
+    var tab = a.ownerDocument.querySelector('a[href="#' + id + '"]');
+    return tab ? clean(tab.textContent) : '';
+  }
+  function bgUrl(el) {
+    var m = /url\(["']?(.*?)["']?\)/.exec(getComputedStyle(el).backgroundImage || '');
+    return m ? m[1] : '';
+  }
+  // A picture that is the element itself or inside it (img tag or background image)
+  function imageInside(el, live) {
+    var img = el.tagName === 'IMG' ? el : el.querySelector('img');
+    if (img) {
+      var src = img.currentSrc || img.getAttribute('src');
+      if (src) return new URL(src, location.href).href;
+    }
+    if (!live) return '';
+    var els = [el].concat(slice(el.querySelectorAll('*')));
+    for (var i = 0; i !== els.length; i++) { var u = bgUrl(els[i]); if (u) return u; }
+    return '';
+  }
+  function hasHiddenClass(el, bp) {
+    for (var n = el; n && n.classList; n = n.parentElement) if (n.classList.contains('u-hidden-' + bp)) return true;
+    return false;
+  }
+
+  function scan(doc, live) {
+    var byKey = {}, list = [];
+    slice(doc.querySelectorAll('a[href]')).forEach(function (a) {
+      if (!isGameLink(a)) return;
+      var href = absUrl(a), key = linkKey(href), card = findCard(a), g = byKey[key];
+      if (!g) {
+        g = byKey[key] = { key: key, href: href, target: '', title: null, desc: '', cat: '', img: '', cards: [], bps: {} };
+        list.push(g);
+      }
+      if (g.cards.indexOf(card) === -1) g.cards.push(card);
+      if (!g.title) { g.title = findTitle(card, a); if (g.title) g.desc = findDesc(card, g.title); }
+      if (!g.img) g.img = imageInside(card, live);
+      if (!g.cat) g.cat = findCategory(a);
+      if (!g.target && a.getAttribute('target')) g.target = a.getAttribute('target');
+      BREAKPOINTS.forEach(function (bp) { if (!hasHiddenClass(a, bp[0])) g.bps[bp[0]] = 1; });
+    });
+    list.forEach(function (g) {
+      var slug = slugOf(g.href);
+      if (!g.title) g.title = slug.replace(/\.html?$/, '').replace(/[-_]+/g, ' ')
+        .replace(/\b\w/g, function (c) { return c.toUpperCase(); });
+      if (!g.img && !live && iconMap[g.key]) g.img = iconMap[g.key];
+      g.nTitle = norm(g.title);
+      g.cTitle = g.nTitle.replace(/ /g, '');
+      g.init = g.nTitle.split(' ').map(function (w) { return w.charAt(0); }).join('');
+      g.hay = ' ' + [g.nTitle, norm(g.desc), norm(g.cat), norm(CONFIG.keywords[slug] || '')].join(' ') + ' ';
+    });
+    return list;
+  }
+
+  /* --- pictures that sit next to (not inside) the card: pick the one right above it --- */
+  function nearbyImage(card, key) {
+    var parent = card.parentElement;
+    if (!parent) return '';
+    var c = card.getBoundingClientRect();
+    if (!c.width || !c.height) return '';
+    var best = '', bestGap = 1e9, bestOverlap = 0;
+    slice(parent.children).forEach(function (el) {
+      if (el === card || el.contains(card) || otherGameLink(el, key)) return;
+      var url = imageInside(el, true);
+      if (!url) return;
+      var r = el.getBoundingClientRect();
+      if (r.width < 20 || r.height < 20) return;
+      var overlap = Math.min(c.right, r.right) - Math.max(c.left, r.left);
+      if (overlap < 0.5 * Math.min(c.width, r.width)) return;   // must be in the same column
+      if (r.top + r.height / 2 > c.bottom) return;               // must not be below the card
+      var gap = Math.max(0, c.top - r.bottom, r.top - c.bottom);
+      if (gap > 160) return;
+      if (gap < bestGap || (gap === bestGap && overlap > bestOverlap)) { best = url; bestGap = gap; bestOverlap = overlap; }
+    });
+    return best;
+  }
+  function otherGameLink(el, key) {
+    var links = el.tagName === 'A' ? [el] : slice(el.querySelectorAll('a[href]'));
+    return links.some(function (a) {
+      var h = a.getAttribute('href');
+      return h && h.charAt(0) !== '#' && linkKey(absUrl(a)) !== key;
+    });
+  }
+  function findNearbyIcons() {
+    // Only measure layouts meant for this screen size (inactive tabs / slides are fine,
+    // a phone-only block measured on a PC is not).
+    var need = index.filter(function (g) { return !g.img; });
+    need.forEach(function (g) { g.okCards = g.cards.filter(isShown); });
+    var hidden = [];
+    need.forEach(function (g) {
+      g.okCards.forEach(function (card) {
+        for (var n = card; n && n !== document.documentElement; n = n.parentElement) {
+          if (hidden.indexOf(n) === -1 && getComputedStyle(n).display === 'none') hidden.push(n);
+        }
+      });
+    });
+    // show hidden tabs / slides for one instant so their pictures can be measured
+    var saved = hidden.map(function (n) {
+      var s = [n, n.style.getPropertyValue('display'), n.style.getPropertyPriority('display')];
+      n.style.setProperty('display', 'block', 'important');
+      return s;
+    });
+    try {
+      need.forEach(function (g) {
+        for (var i = 0; i !== g.okCards.length && !g.img; i++) g.img = nearbyImage(g.okCards[i], g.key);
+      });
+    } finally {
+      saved.forEach(function (s) {
+        if (s[1]) s[0].style.setProperty('display', s[1], s[2]); else s[0].style.removeProperty('display');
+      });
+    }
+    index.forEach(function (g) {
+      if (g.img) iconMap[g.key] = g.img;
+      else if (iconMap[g.key]) g.img = iconMap[g.key];   // remembered from another screen size
+    });
+    saveIcons();   // so the other pages can show the pictures too
+  }
+
+  /* --- is the game in the layout for this screen size? --- */
+  var probeCache = {};
+  function hiddenForDevice(n) {
+    var cls = slice(n.classList).filter(function (c) { return !STATE_CLASS.test(c); }).join(' ');
+    if (!cls) return false;
+    var key = cls + '|' + window.innerWidth;
+    if (!(key in probeCache)) {
+      var probe = document.createElement(n.tagName);   // same classes, minus the tab/slide state
+      probe.className = cls;
+      probe.style.cssText = 'position:absolute;left:-9999px;top:0;width:1px;height:1px;visibility:hidden;';
+      document.body.appendChild(probe);
+      probeCache[key] = getComputedStyle(probe).display === 'none';
+      document.body.removeChild(probe);
+    }
+    return probeCache[key];
+  }
+  function isShown(el) {
+    for (var n = el; n && n !== document.documentElement; n = n.parentElement) {
+      if (getComputedStyle(n).display !== 'none') continue;
+      if (n.matches(SWITCHER) && !hiddenForDevice(n)) continue;
+      return false;
+    }
+    return true;
+  }
+  function available(g) {
+    if (!CONFIG.onlyGamesOnThisDevice) return true;
+    return livePage ? g.cards.some(isShown) : !!g.bps[currentBp()];
+  }
+
+  /* ================= matching ================= */
+  function isSubsequence(q, t) {
+    var j = 0;
+    for (var i = 0; i !== t.length && j !== q.length; i++) if (t.charAt(i) === q.charAt(j)) j++;
+    return j === q.length;
+  }
+  function score(g, q) {
+    var qc = q.replace(/ /g, '');
+    if (!qc) return 0;
+    if (g.cTitle === qc) return 100;
+    if (g.cTitle.indexOf(qc) === 0) return 90;
+    if ((' ' + g.nTitle).indexOf(' ' + q) !== -1) return 80;
+    if (g.cTitle.indexOf(qc) !== -1) return 70;
+    if (qc.length >= 2 && g.init.indexOf(qc) === 0) return 65;                    // "gd", "fnab"
+    var words = q.split(' ');
+    if (words.every(function (w) { return g.hay.indexOf(' ' + w) !== -1; })) return 50;
+    if (words.every(function (w) { return g.hay.indexOf(w) !== -1; })) return 40;
+    if (qc.length >= 4 && isSubsequence(qc, g.cTitle)) return 20;                   // typos / missing letters
+    return 0;
+  }
+  function search(query) {
+    var q = norm(query);
+    if (!q) return [];
+    var hits = [];
+    index.forEach(function (g, i) {
+      var s = score(g, q);
+      if (s > 0 && available(g)) hits.push({ g: g, s: s, i: i });
+    });
+    if (hits.some(function (h) { return h.s >= 40; })) hits = hits.filter(function (h) { return h.s >= 40; });
+    hits.sort(function (a, b) { return b.s - a.s || a.i - b.i; });
+    return hits.slice(0, CONFIG.maxResults).map(function (h) { return h.g; });
+  }
+
+  /* ================= the search box ================= */
+  function highlight(el, text, query) {
+    var q = clean(query).toLowerCase(), pos = q ? text.toLowerCase().indexOf(q) : -1;
+    if (pos === -1) { el.textContent = text; return; }
+    var mark = document.createElement('mark');
+    mark.textContent = text.slice(pos, pos + q.length);
+    el.appendChild(document.createTextNode(text.slice(0, pos)));
+    el.appendChild(mark);
+    el.appendChild(document.createTextNode(text.slice(pos + q.length)));
+  }
+  function letterBadge(title) {
+    var ph = document.createElement('span');
+    ph.className = 'bs-thumb bs-letter';
+    ph.textContent = title.charAt(0).toUpperCase();
+    ph.style.background = LETTER_COLORS[title.charCodeAt(0) % LETTER_COLORS.length];
+    return ph;
+  }
+
+  function createWidget(host, onClose) {
+    var id = 'bs-' + (++uid);
+    var wrap = document.createElement('div');
+    wrap.className = 'bs-wrap';
+    wrap.innerHTML = SEARCH_SVG.replace('\u003csvg', '\u003csvg class="bs-icon"');
+    var input = document.createElement('input');
+    input.className = 'bs-input';
+    input.type = 'search';
+    input.placeholder = CONFIG.placeholder;
+    input.setAttribute('autocomplete', 'off');
+    input.setAttribute('autocapitalize', 'off');
+    input.setAttribute('spellcheck', 'false');
+    input.setAttribute('enterkeyhint', 'search');
+    input.setAttribute('role', 'combobox');
+    input.setAttribute('aria-label', CONFIG.placeholder);
+    input.setAttribute('aria-autocomplete', 'list');
+    input.setAttribute('aria-expanded', 'false');
+    input.setAttribute('aria-controls', id + '-list');
+    wrap.appendChild(input);
+    host.appendChild(wrap);
+
+    var box = document.createElement('div');
+    box.className = 'bs-results';
+    box.id = id + '-list';
+    box.setAttribute('role', 'listbox');
+    document.body.appendChild(box);
+
+    var items = [], active = -1;
+
+    function isOpen() { return box.classList.contains('bs-open'); }
+    function place() {
+      var r = input.getBoundingClientRect();
+      if (r.bottom < 0 || r.top > window.innerHeight) { close(); return; }
+      var w = Math.min(Math.max(r.width, 300), window.innerWidth - 16);
+      var left = Math.min(Math.max(8, r.left + r.width / 2 - w / 2), window.innerWidth - 8 - w);
+      box.style.width = w + 'px';
+      box.style.left = left + 'px';
+      box.style.top = (r.bottom + 6) + 'px';
+      box.style.maxHeight = Math.max(160, Math.min(460, window.innerHeight - r.bottom - 16)) + 'px';
+    }
+    function open() {
+      box.classList.add('bs-open');
+      input.setAttribute('aria-expanded', 'true');
+      place();
+    }
+    function close() {
+      box.classList.remove('bs-open');
+      input.setAttribute('aria-expanded', 'false');
+      input.removeAttribute('aria-activedescendant');
+      active = -1;
+    }
+    function setActive(i) {
+      if (!items.length) return;
+      active = (i + items.length) % items.length;
+      items.forEach(function (el, k) { el.classList.toggle('bs-active', k === active); });
+      input.setAttribute('aria-activedescendant', items[active].id);
+      items[active].scrollIntoView({ block: 'nearest' });
+    }
+    function message(text) {
+      var m = document.createElement('div');
+      m.className = 'bs-empty';
+      m.textContent = text;
+      box.appendChild(m);
+    }
+    function render() {
+      var query = input.value;
+      box.innerHTML = '';
+      items = [];
+      active = -1;
+      if (!clean(query)) { close(); return; }
+      if (!ready) { message(CONFIG.loadingText); open(); return; }
+      var results = search(query);
+      if (!results.length) message(CONFIG.emptyText);
+      results.forEach(function (g, k) {
+        var a = document.createElement('a');
+        a.className = 'bs-item';
+        a.id = id + '-opt-' + k;
+        a.href = g.href;
+        a.setAttribute('role', 'option');
+        if (g.target) { a.target = g.target; a.rel = 'noopener'; }
+        if (g.img) {
+          var im = document.createElement('img');
+          im.className = 'bs-thumb'; im.alt = ''; im.loading = 'lazy';
+          im.onerror = function () { if (im.parentNode) im.parentNode.replaceChild(letterBadge(g.title), im); };
+          im.src = g.img;
+          a.appendChild(im);
+        } else {
+          a.appendChild(letterBadge(g.title));
+        }
+        var txt = document.createElement('span'); txt.className = 'bs-txt';
+        var t = document.createElement('div'); t.className = 'bs-title';
+        highlight(t, g.title, query);
+        txt.appendChild(t);
+        var subText = [g.cat, g.desc].filter(Boolean).join(' \u00b7 ');
+        if (subText) {
+          var s = document.createElement('div'); s.className = 'bs-sub'; s.textContent = subText;
+          txt.appendChild(s);
+        }
+        a.appendChild(txt);
+        a.addEventListener('mousemove', function () { if (active !== k) setActive(k); });
+        box.appendChild(a);
+        items.push(a);
+      });
+      open();
+      if (items.length) setActive(0);
+    }
+
+    input.addEventListener('focus', function () { if (clean(input.value)) render(); });
+    input.addEventListener('input', render);
+    input.addEventListener('keydown', function (e) {
+      if (e.key === 'ArrowDown') { e.preventDefault(); if (!isOpen()) render(); else setActive(active + 1); }
+      else if (e.key === 'ArrowUp') { e.preventDefault(); setActive(active - 1); }
+      else if (e.key === 'Enter') { e.preventDefault(); var it = items[active >= 0 ? active : 0]; if (it) it.click(); }
+      else if (e.key === 'Escape') { close(); input.blur(); if (onClose) onClose(); }
+    });
+    document.addEventListener('pointerdown', function (e) {
+      if (!wrap.contains(e.target) && !box.contains(e.target)) { close(); if (onClose) onClose(); }
+    }, true);
+    window.addEventListener('scroll', function () { if (isOpen()) place(); }, { passive: true, capture: true });
+    window.addEventListener('resize', function () { if (isOpen()) render(); });
+
+    return { input: input, refresh: function () { if (isOpen() || (document.activeElement === input && clean(input.value))) render(); } };
+  }
+
+  /* ================= placing it in the header ================= */
+  function textRect(el) {
+    if (/^(P|H[1-6]|SPAN)$/.test(el.tagName)) {
+      var rg = document.createRange();
+      rg.selectNodeContents(el);
+      return rg.getBoundingClientRect();
+    }
+    return el.getBoundingClientRect();
+  }
+  function layoutHeader(sheet, slot) {
+    slot.className = 'bs-slot bs-center';
+    slot.style.width = '';
+    slot.style.top = '';
+    var s = sheet.getBoundingClientRect();
+    var mid = s.left + s.width / 2, left = s.left, right = s.right, top = 1e9, bottom = -1e9;
+    slice(sheet.querySelectorAll('img, a, p, h1, h2, h3, h4, h5, h6, button, input, svg, .u-icon, .u-image')).forEach(function (el) {
+      if (slot.contains(el)) return;
+      var r = textRect(el);
+      if (!r.width || !r.height || r.width > s.width * 0.7) return;     // skip hidden things and full-width backgrounds
+      if (r.bottom <= s.top || r.top >= s.bottom) return;
+      top = Math.min(top, r.top); bottom = Math.max(bottom, r.bottom);
+      if (r.right <= mid) left = Math.max(left, r.right);
+      else if (r.left >= mid) right = Math.min(right, r.left);
+      else { left = mid; right = mid; }                                 // something already sits in the middle
+    });
+    var room = 2 * Math.min(mid - left, right - mid) - 40;
+    if (room >= CONFIG.barMinWidth) {
+      slot.style.width = Math.min(room, CONFIG.barMaxWidth) + 'px';
+      if (bottom > top) slot.style.top = ((top + bottom) / 2 - s.top) + 'px';   // level with logo + buttons
+    } else {
+      slot.className = 'bs-slot bs-row';
+    }
+  }
+  function mountInHeader() {
+    var header = document.querySelector('header.u-header') || document.querySelector('header');
+    if (!header) return false;
+    var sheet = header.querySelector('.u-sheet') || header;
+    if (getComputedStyle(sheet).position === 'static') sheet.style.position = 'relative';
+    var slot = document.createElement('div');
+    slot.className = 'bs-slot bs-center';
+    // an old HTML element with the search box is no longer needed
+    slice(document.querySelectorAll('#blobi-search, .blobi-search')).forEach(function (el) {
+      var box = el.closest('.u-custom-html') || el;
+      box.style.display = 'none';
+    });
+    sheet.appendChild(slot);
+    widgets.push(createWidget(slot));
+    var layout = function () { layoutHeader(sheet, slot); };
+    layout();
+    window.addEventListener('resize', debounce(layout));
+    window.addEventListener('load', layout);
+    if (document.fonts && document.fonts.ready) document.fonts.ready.then(layout);
+    return true;
+  }
+
+  /* ================= start ================= */
+  function setReady(list, live) {
+    index = list;
+    livePage = live;
+    ready = true;
+    widgets.forEach(function (w) { w.refresh(); });
+  }
+  function whenLoaded(fn) {
+    if (document.readyState === 'complete') setTimeout(fn, 300);
+    else window.addEventListener('load', function () { setTimeout(fn, 300); });
+  }
+  function loadIndex() {
+    var here = scan(document, true);
+    if (here.length >= 5) {                       // this is the games page
+      setReady(here, true);
+      whenLoaded(findNearbyIcons);
+      return;
+    }
+    fetch(new URL(CONFIG.gamesPage, location.href).href, { credentials: 'same-origin' })
+      .then(function (r) { return r.text(); })
+      .then(function (html) {
+        var doc = new DOMParser().parseFromString(html, 'text/html');
+        var list = scan(doc, false);
+        setReady(list.length >= here.length ? list : here, list.length < here.length);
+      })
+      .catch(function () { setReady(here, true); });
+  }
+
+  function init() {
+    var mounted = false;
+    if (CONFIG.placement === 'header') mounted = mountInHeader();
+    if (!mounted) {
+      slice(document.querySelectorAll('#blobi-search, .blobi-search')).forEach(function (host) {
+        if (host.getAttribute('data-bs-ready')) return;
+        host.setAttribute('data-bs-ready', '1');
+        widgets.push(createWidget(host));
+      });
+    }
+
+    var openFloat = null;
+    if (!widgets.length) {
+      var panel = document.createElement('div');
+      panel.className = 'bs-float';
+      document.body.appendChild(panel);
+      var fab = document.createElement('button');
+      fab.type = 'button';
+      fab.className = 'bs-fab';
+      fab.setAttribute('aria-label', 'Spiele durchsuchen');
+      fab.innerHTML = SEARCH_SVG;
+      document.body.appendChild(fab);
+      var w = createWidget(panel, function () { panel.classList.remove('bs-open'); fab.style.display = ''; });
+      widgets.push(w);
+      openFloat = function () {
+        panel.classList.add('bs-open');
+        fab.style.display = 'none';
+        w.input.focus(); // must stay synchronous so phones open the keyboard
+      };
+      fab.addEventListener('click', openFloat);
+    }
+
+    // Press "/" anywhere to jump into the search
+    document.addEventListener('keydown', function (e) {
+      if (e.key !== '/' || e.ctrlKey || e.metaKey || e.altKey) return;
+      var t = e.target;
+      if (t && (t.isContentEditable || /^(INPUT|TEXTAREA|SELECT)$/.test(t.tagName))) return;
+      if (openFloat) { e.preventDefault(); openFloat(); return; }
+      var target = widgets.filter(function (x) { return x.input.getClientRects().length; })[0];
+      if (target) { e.preventDefault(); target.input.focus(); }
+    });
+
+    loadIndex();
+  }
+
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init);
+  else init();
+})();
+</script><meta data-intl-tel-input-cdn-path="intlTelInput/"></head>
+  <body data-path-to-root="./" data-include-products="true" class="u-body u-clearfix u-xl-mode"    data-lang="de"><header class="u-clearfix u-color-var u-header u-valign-middle-xs u-header" id="header"><div class="u-clearfix u-sheet u-sheet-1">
         <div class="custom-expanded u-container-style u-group u-group-1" data-href="#" title="Home">
-          <div class="u-container-layout"></div>
+          <div class="u-container-layout">
+            <p class="u-custom-font u-font-lato u-text u-text-body-color u-text-1">Blobigames:<br>
+            </p>
+            <p class="u-custom-font u-font-lato u-text u-text-body-color u-text-2">Reimagined </p>
+          </div>
         </div>
-        <p class="u-custom-font u-font-lato u-text u-text-body-color u-text-1">Blobigames:<br>
-        </p>
-        <a href="./" data-page-id="241899835" class="u-image u-logo u-image-1" data-image-width="500" data-image-height="500">
-          <img src="images/Untitled_design__32_-removebg-preview.png" class="u-logo-image u-logo-image-1" title="Home">
+        <a href="./index.html" data-page-id="241899835" class="u-image u-logo u-image-1" data-image-width="500" data-image-height="500">
+          <img src="images/Untitled_design__32_-removebg-preview.png?rand=0c6e" class="u-logo-image u-logo-image-1" title="Home">
         </a>
-        <p class="u-align-right-xs u-custom-font u-font-lato u-text u-text-body-color u-text-2">Reimagined </p>
-        <a href="contact.html" data-page-id="121809103" class="u-border-none u-btn u-btn-round u-button-style u-custom-color-3 u-hover-custom-color-4 u-radius u-btn-1" target="_blank" title="contact">Spiel vorschlagen </a>
+        <a href="contact.html#ideas" data-page-id="121809103" class="u-border-none u-btn u-btn-round u-button-style u-custom-color-3 u-hover-custom-color-4 u-radius u-btn-1" target="_blank" title="contact">Spiel vorschlagen </a>
+        <div class="u-clearfix u-custom-html u-custom-html-1">
+          <div class="blobi-search"></div>
+        </div>
       </div></header>
-    <section class="u-align-left u-clearfix u-container-align-left u-section-1" id="block-6">
-      <div class="u-clearfix u-sheet u-valign-middle-sm u-sheet-1">
+    <section class="u-clearfix u-grey-10 u-section-1" id="block-7">
+      <div class="u-clearfix u-sheet u-valign-middle-xl u-valign-middle-xs u-sheet-1">
+        <h3 class="u-text u-text-default u-text-1">Tasks for testers:</h3>
+      </div>
+    </section>
+    <section class="u-align-left u-clearfix u-container-align-left u-section-2" id="block-6">
+      <div class="u-clearfix u-sheet u-valign-middle-xl u-sheet-1">
         <div class="custom-expanded u-clearfix u-custom-html u-custom-html-1">
+          <a href="https://gio.help-blobigames.workers.dev/" target="_blank">Growden.io</a>
+          <br>
+          <a href="https://1v1.help-blobigames.workers.dev/" target="_blank">1v1.LOL</a>
+          <br>
+          <a href="https://coa.help-blobigames.workers.dev/" target="_blank">Clash of Armour</a>
+          <br>
+          <a href="https://fp.help-blobigames.workers.dev/" target="_blank">Pickaxe Crusher</a>
+          <br>
+          <a href="https://dq.help-blobigames.workers.dev/" target="_blank">Drive Quest</a>
+          <br>
+          <a href="https://robotik0.github.io/g/3" target="_blank">Granny</a>
+          <br>
+          <a href="https://fz.help-blobigames.workers.dev/" target="_blank">Fortzone</a>
+          <br>
+          <a href="https://bs.help-blobigames.workers.dev/" target="_blank">Battle Starr</a>
+          <br>
+          <a href="https://mm.help-blobigames.workers.dev/" target="_blank">Murder Mystery</a>
+          <br>
+          <a href="https://dti.help-blobigames.workers.dev/" target="_blank">Dress to Impress</a>
+          <br>
+          <a href="https://ft.help-blobigames.workers.dev/" target="_blank">Farm Town</a>
+          <br>
+          <a href="https://rs.help-blobigames.workers.dev/" target="_blank">Rocket Soccer</a>
+          <br>
+          <a href="https://mp.help-blobigames.workers.dev/" target="_blank">Melon Playground</a>
+          <br>
           <a href="https://robotik0.github.io/blobfisch-survivors/" target="_blank">Blobfisch Survivors</a>
+          <br>
+          <a href="https://robotik0.github.io/blobfisch-survivors/guide" target="_blank">Blobfisch Survivors Guide</a>
+          <br>
+          <a href="https://robotik0.github.io/blobfisch-survivors/changes14" target="_blank">Blobfisch Survivors Changelog 14</a>
+          <br>
+          <a href="https://robotik0.github.io/blobfisch-survivors/lite" target="_blank">Blobfisch Survivors Lite</a>
+          <br>
+          <a href="https://blobfisch-wanderung-2.vercel.app/" target="_blank">Blobfisch Wanderung 2</a>
           <br>
         </div>
       </div>
     </section>
+    <section class="u-clearfix u-grey-10 u-section-3" id="block-8">
+      <div class="u-clearfix u-sheet u-valign-middle-xl u-valign-middle-xs u-sheet-1">
+        <h3 class="u-text u-text-default u-text-1">Dev playground:</h3>
+      </div>
+    </section>
+    <section class="u-align-left u-clearfix u-container-align-left u-section-4" id="block-9">
+      <div class="u-clearfix u-sheet u-sheet-1"></div>
+    </section>
     
     
     
-    <footer class="u-align-center u-clearfix u-color-var u-container-align-center u-footer u-footer" id="footer"><div class="u-clearfix u-sheet u-valign-middle-lg u-valign-middle-md u-valign-middle-sm u-sheet-1">
-        <div class="custom-expanded u-custom-color-2 u-shape u-shape-rectangle u-shape-1" data-href="dev_ddf2a4ce4100888b81b0d9563b3923dea67b35d410cce7fcf2e2c97ecc9a9a6d.html" data-page-id="39003135" title="dev" data-target="_blank"></div>
+    <footer class="u-align-center u-clearfix u-color-var u-container-align-center u-container-align-center-xl u-footer u-footer" id="footer"><div class="u-clearfix u-sheet u-sheet-1">
+        <div class="custom-expanded u-custom-color-2 u-shape u-shape-rectangle u-shape-1" data-href="dev_ddf2a4ce4100888b81b0d9563b3923dea67b35d410cce7fcf2e2c97ecc9a9a6d.html" data-page-id="39003135" title="dev" data-target="_blank" rel="nofollow noopener noreferrer"></div>
         <p class="u-align-left u-small-text u-text u-text-variant u-text-1">
           <a class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-palette-1-base u-btn-1" href="mailto:help.blobigames@outlook.com">help.blobigames@outlook.com </a>
         </p>
@@ -73,5 +791,136 @@
           <a class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-palette-1-base u-btn-2" href="team.html" data-page-id="315023448" title="Team">2026 Blobigames &amp; Co. </a>
         </p>
       </div></footer>
-  
+    <section class="u-backlink u-clearfix u-grey-80"></section><span style="height: 64px; width: 64px; margin-left: 0px; margin-right: auto; margin-top: 0px; background-image: none; right: 20px; bottom: 15px; padding: 15px;" class="u-back-to-top u-icon u-icon-circle u-opacity u-opacity-85 u-palette-1-base" data-href="#"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 551.13 551.13"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-1d98"></use></svg><svg class="u-svg-content" enable-background="new 0 0 551.13 551.13" viewBox="0 0 551.13 551.13" xmlns="http://www.w3.org/2000/svg" id="svg-1d98"><path d="m275.565 189.451 223.897 223.897h51.668l-275.565-275.565-275.565 275.565h51.668z"></path></svg></span>
+  <section class="u-black u-clearfix u-container-style u-dialog-block u-opacity u-opacity-70 u-payment-dialog u-dialog-section-7" id="popup-569d" data-dialog-show-on="click" data-dialog-show-on-list="315023448,39003135,241899835,2582976,121809103" data-dialog-show-interval="5000">
+      <div class="custom-expanded u-align-center u-container-align-center u-container-style u-dialog u-radius u-shape-round u-white u-dialog-1">
+        <div class="u-container-layout u-container-layout-1">
+          <div class="custom-expanded u-hidden-xl u-payment-services u-tab-links-align-justify u-tab-payment u-tab-vertical u-tabs u-payment-services-1" data-payment-order-approved-message="Your order has been approved. Thank you!" data-payment-order-cancelled-message="Unable to process your order. Please try again later." data-payment-cart-title="Your cart" data-payment-total-label="Total">
+            <ul class="u-tab-list u-unstyled" role="tablist"><li class="u-tab-item" role="presentation"><a class="active u-active-grey-10 u-button-style u-payment-paypal u-tab-link u-text-body-color" id="link-tab-9cb3" href="#tab-9cb3" role="tab" aria-controls="tab-9cb3" aria-selected="true"><input type="radio" class="u-field-input u-grey-15 u-radius-15" name="payment-group" checked="checked"><span>Paypal</span><svg class="u-svg-content" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"><path fill="#009EE3" d="M11,5.9H18c3.8,0,5.2,1.9,4.9,4.7c-0.3,4.7-3.2,7.2-6.9,7.2h-1.9c-0.5,0-0.8,0.3-0.9,1.3l-0.8,4.3
+  c-0.1,0.3-0.2,0.5-0.5,0.6H7.6c-0.4,0-0.5-0.3-0.4-1l2.6-16C9.9,6.3,10.2,5.9,11,5.9z"></path><path fill="#113984" d="M6.7,0h7.1c2,0,4.3,0.1,5.9,1.5c1.1,0.9,1.6,2.4,1.5,4c-0.4,5.4-3.7,8.5-8,8.5H9.6c-0.6,0-0.9,0.4-1.2,1.5
+  l-0.9,5.1C7.4,21,7.3,21.3,7,21.3H2.6C2,21.3,1.9,21,2,20.1L5.2,1.3C5.3,0.4,5.7,0,6.7,0z"></path><path fill="#172C70" d="M8.6,14.8l1.3-7.9c0.1-0.7,0.5-1,1.3-1h7.1c1.2,0,2.1,0.2,2.8,0.5c-0.7,4.8-3.8,7.5-7.9,7.5H9.6
+  C9.1,13.9,8.8,14.1,8.6,14.8z"></path></svg>
+</a>
+</li><li class="u-tab-item" role="presentation"><a class="u-active-grey-10 u-button-style u-payment-stripe u-tab-link u-text-body-color" id="link-tab-ab80" href="#tab-ab80" role="tab" aria-controls="tab-ab80" aria-selected="false"><input type="radio" class="u-field-input u-grey-15 u-radius-15" name="payment-group"><span>Stripe</span><svg class="u-svg-content" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 24 24"><path fill="#635BFF" d="M14,9.2c-2.3-0.8-3.4-1.5-3.4-2.4c0-0.8,0.8-1.3,2-1.3c2.3,0,4.7,0.8,6.4,1.6l0.9-5.5
+  c-1.3-0.5-4-1.6-7.7-1.6C9.6,0,7.5,0.7,5.8,1.9C4.1,3.2,3.4,4.9,3.4,7.2c0,4,2.6,5.7,6.8,7.2c2.7,0.9,3.6,1.6,3.6,2.5
+  c0,0.9-0.9,1.6-2.4,1.6c-1.9,0-5.2-0.9-7.3-2.1L3,22c1.8,0.9,5.1,2,8.7,2c2.8,0,5.1-0.7,6.6-1.9c1.8-1.3,2.7-3.2,2.7-5.7
+  C20.9,12.3,18.2,10.7,14,9.2L14,9.2z"></path></svg>
+</a>
+</li></ul>
+            <div class="u-tab-content">
+              <div class="u-container-style u-payment-paypal u-tab-active u-tab-pane" id="tab-9cb3" role="tabpanel" aria-labelledby="link-tab-9cb3">
+                <div class="u-container-layout u-payment-services-inner u-container-layout-2">Loading...</div>
+              </div>
+              <div class="u-container-style u-payment-stripe u-tab-pane" id="tab-ab80" role="tabpanel" aria-labelledby="link-tab-ab80">
+                <div class="u-container-layout u-container-layout-3">
+                  <a href="#" class="u-btn u-button-style u-stripe-button u-btn-1">Pay with Stripe</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <img class="u-absolute-hcenter u-expanded u-image u-image-contain u-image-default u-preserve-proportions" src="images/logopfp20highres14.png" alt="" data-image-width="1555" data-image-height="1555" data-href="https://referral-blobigames.short.gy/yt" data-target="_blank" title="contact">
+          <div class="u-shape u-shape-rectangle u-white u-shape-1"></div>
+        </div>
+        <button class="u-dialog-close-button u-icon u-text-black u-icon-1"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 16 16" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-efe9"></use></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" xml:space="preserve" class="u-svg-content" viewBox="0 0 16 16" x="0px" y="0px" id="svg-efe9"><rect x="7" y="0" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -3.3138 8.0002)" width="2" height="16"></rect><rect x="0" y="7" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -3.3138 8.0002)" width="16" height="2"></rect></svg></button>
+      </div>
+    </section><style>.u-dialog-section-7 .u-dialog-1 {
+  box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.2);
+  --radius: 20px;
+  min-height: 614px;
+  height: auto;
+  width: 614px;
+  margin: 46px auto 60px;
+}
+
+.u-dialog-section-7 .u-container-layout-1 {
+  padding: 0;
+}
+
+.u-dialog-section-7 .u-payment-services-1 {
+  min-width: 50px;
+  margin-right: 0;
+  margin-left: auto;
+  margin-top: 0;
+}
+
+.u-dialog-section-7 .u-container-layout-2 {
+  padding: 20px 0 0;
+}
+
+.u-dialog-section-7 .u-container-layout-3 {
+  padding: 0;
+}
+
+.u-dialog-section-7 .u-btn-1 {
+  width: 100%;
+  margin: 20px auto 0;
+}
+
+.u-dialog-section-7 .u-shape-1 {
+  width: 87px;
+  height: 43px;
+  margin: -910px auto 0;
+}
+
+.u-dialog-section-7 .u-icon-1 {
+  width: 22px;
+  height: 22px;
+  left: 16px;
+  top: 13px;
+  position: absolute;
+  padding: 0;
+}
+
+@media (max-width: 1199px) {
+  .u-dialog-section-7 .u-dialog-1 {
+    margin-top: 43px;
+  }
+
+  .u-dialog-section-7 .u-icon-1 {
+    right: 15px;
+  }
+}
+
+@media (max-width: 991px) {
+  .u-dialog-section-7 .u-dialog-1 {
+    margin-top: 46px;
+  }
+}
+
+@media (max-width: 767px) {
+  .u-dialog-section-7 .u-dialog-1 {
+    min-height: 540px;
+    width: 540px;
+    margin-top: 115px;
+  }
+
+  .u-dialog-section-7 .u-container-layout-1 {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .u-dialog-section-7 .u-icon-1 {
+    right: 30px;
+  }
+}
+
+@media (max-width: 575px) {
+  .u-dialog-section-7 .u-dialog-1 {
+    min-height: 340px;
+    width: 340px;
+    margin-top: 38px;
+  }
+
+  .u-dialog-section-7 .u-container-layout-1 {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .u-dialog-section-7 .u-icon-1 {
+    width: 18px;
+    height: 18px;
+    top: 14px;
+    right: 11px;
+  }
+}</style>
 </body></html>
